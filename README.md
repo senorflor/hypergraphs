@@ -47,6 +47,7 @@ Minimalist hypergraphs:
 ;=> ...
 ;; Go get some coffee. Time to figure out what good pathfinding algos
 ;; for hypergraphs look like...
+```
 
 ## Usage
 
