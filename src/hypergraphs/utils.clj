@@ -3,7 +3,7 @@
             [clojure.math.combinatorics :as c]
             [hypergraphs.core :as hgc]))
 
-(defn- is-path?
+(defn- is-valid-path?
   "An edgelist is a path if there is some element in common between
   each pair of adjacent hyperedges, n1 is only in the first path, and
   n2 is only in the last. We assume all incoming edgelists are length
@@ -26,4 +26,4 @@
          (mapcat c/permutations)
          (filter #(and (contains? starts (first %))
                        (contains? ends (last %))))
-         (filter (partial is-path? hg n1 n2)))))
+         (filter (partial is-valid-path? hg n1 n2)))))
