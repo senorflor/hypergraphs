@@ -31,3 +31,5 @@
       (are [expected actual] (= expected actual)
            random-edge-set   (edges random-hg)
            #{#{1 2} #{3 4}}  (edges disjoint-hg)))))
+
+#_( TEST DRIVEN DEVELOPMENT IS DEAD )
